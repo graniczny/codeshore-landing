@@ -1,0 +1,187 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  overflow: hidden;
+}
+main,
+section {
+  height: 100%;
+}
+h1,
+h2,
+p {
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+h2:last-of-type {
+  margin-bottom: 1.3rem;
+}
+
+section.info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.info div {
+  flex-basis: 90%;
+}
+section.info div img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+element.intro,
+#invisible {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  bottom: 0;
+  left: 0px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  border: 1px rgba(0, 0, 0, 0.65) solid;
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-sizing: border-box;
+}
+element.intro #messenger {
+  padding-left: 0rem;
+}
+
+element.intro #messenger .msn-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.85rem;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+  margin-bottom: 1rem;
+}
+element.intro #messenger #exit {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+}
+element.intro #messenger #exit:hover {
+  color: rgba(0, 0, 0);
+}
+element.intro #messenger .msng-line {
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+element.intro #messenger .wrapper {
+  display: inline-block;
+  padding: 0 1rem 0;
+  background-color: rgba(206, 206, 206, 0.5);
+  border-radius: 1.3rem 1.3rem 1.3rem 0;
+  transition: border-radius 0.2s linear;
+  position: relative;
+  overflow: hidden;
+  height: 2.35rem;
+  max-width: 90%;
+
+  /* position: relative;
+  transform: translate(-100%,100%); */
+}
+element.intro #messenger .wrapper span {
+  display: inline-block;
+  margin: 0.5rem 0.1rem 1.5rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 0.65rem;
+  height: 0.65rem;
+}
+element.intro #messenger .wrapper p,
+#invisible p {
+  text-align: left;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+#invisible {
+  top: -10000px;
+  left: -100000;
+  opacity: 0;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 576px) {
+  section.info div {
+    flex-basis: 70%;
+  }
+
+  element.intro,
+  #invisible {
+    height: 400px;
+    width: 380px;
+    left: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+  section.info div {
+    flex-basis: 50%;
+  }
+
+  element.intro,
+  #invisible {
+    height: 460px;
+  }
+}
+@media screen and (min-width: 1192px) {
+  body,
+  html {
+    font-size: 16px;
+  }
+  section.info div {
+    flex-basis: 45%;
+  }
+
+  element.intro,
+  #invisible {
+    height: 550px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body,
+  html {
+    font-size: 19px;
+  }
+  section.info div {
+    flex-basis: 45%;
+  }
+  element.intro,
+  #invisible {
+    height: 650px;
+    width: 450px;
+  }
+}
