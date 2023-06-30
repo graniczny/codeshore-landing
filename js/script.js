@@ -4,7 +4,6 @@
     "my name is Rafal",
     "I'm fullstack web developer 👨‍💻",
     "Drop me a line on graniczny.rafal@gmail.com if you are looking for some help",
-    "You can also reach me on mobile 📱 +48 784 003 904",
     "Have a great day ☀️",
     "👀 R.",
   ];
